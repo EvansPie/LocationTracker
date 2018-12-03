@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E601C5622189E6FF00E522F4 /* vangelis-jog.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E601C5612189E6FF00E522F4 /* vangelis-jog.gpx */; };
+		E63BA68321873D2700E8459F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63BA68221873D2700E8459F /* AppDelegate.swift */; };
+		E63BA68521873D2700E8459F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63BA68421873D2700E8459F /* ViewController.swift */; };
+		E63BA68821873D2700E8459F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63BA68621873D2700E8459F /* Main.storyboard */; };
+		E63BA68A21873D2800E8459F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63BA68921873D2800E8459F /* Assets.xcassets */; };
+		E63BA68D21873D2800E8459F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63BA68B21873D2800E8459F /* LaunchScreen.storyboard */; };
+		E63BA69821873D2800E8459F /* LocationTrackerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63BA69721873D2800E8459F /* LocationTrackerDemoTests.swift */; };
+		E63BA6BD21875E8000E8459F /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63BA6BC21875E8000E8459F /* CLLocationExtension.swift */; };
+		E63BA6C021875F1F00E8459F /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63BA6BF21875F1F00E8459F /* LocationTracker.swift */; };
+		E647B084218F59D6007C8927 /* ymittos-run.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E647B083218F59D6007C8927 /* ymittos-run.gpx */; };
+		E688F3192189A93200707376 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E688F3182189A93200707376 /* MapViewController.swift */; };
+		E688F31B2189AD3700707376 /* pendeli-walk.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E688F31A2189AD3700707376 /* pendeli-walk.gpx */; };
+		E688F3212189AF2100707376 /* pendeli-cycle.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E688F31C2189AF2000707376 /* pendeli-cycle.gpx */; };
+		E688F3222189AF2100707376 /* pendeli-jog.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E688F31D2189AF2000707376 /* pendeli-jog.gpx */; };
+		E688F3232189AF2100707376 /* pendeli-drive.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E688F31E2189AF2000707376 /* pendeli-drive.gpx */; };
+		E688F3242189AF2100707376 /* pendeli-run.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E688F31F2189AF2000707376 /* pendeli-run.gpx */; };
+		E688F3252189AF2100707376 /* pendeli-sprint.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E688F3202189AF2000707376 /* pendeli-sprint.gpx */; };
+		E6B3A7B121B2B03A002FBB00 /* CustomLocationResolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3A7B021B2B03A002FBB00 /* CustomLocationResolutionViewController.swift */; };
+		E6CAEA1C218D913D0053A09D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAEA1B218D913D0053A09D /* UIColorExtension.swift */; };
+		E6CAEA1E218DA0440053A09D /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAEA1D218DA0440053A09D /* UIApplicationExtension.swift */; };
+		E6CAEA20218DA54B0053A09D /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAEA1F218DA54B0053A09D /* NotificationExtension.swift */; };
+		E6CAEA22218DE3B60053A09D /* athens-drive.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E6CAEA21218DE3B60053A09D /* athens-drive.gpx */; };
+		E6E0DC13218CF660004829CB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0DC12218CF660004829CB /* MenuViewController.swift */; };
+		E6E0DC15218CFC54004829CB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0DC14218CFC54004829CB /* UIViewExtension.swift */; };
+		E6E0DC17218D0032004829CB /* LocationTrackerPowerSaveOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0DC16218D0032004829CB /* LocationTrackerPowerSaveOption.swift */; };
+		E6FA4EC8218B029000351BDB /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4EC7218B029000351BDB /* DateExtension.swift */; };
+		E6FA4ECA218B06CD00351BDB /* walking-on-terrace.json in Resources */ = {isa = PBXBuildFile; fileRef = E6FA4EC9218B06CD00351BDB /* walking-on-terrace.json */; };
+		E6FA4ECE218B393300351BDB /* mavilis-walk.json in Resources */ = {isa = PBXBuildFile; fileRef = E6FA4ECD218B393300351BDB /* mavilis-walk.json */; };
+		E6FA4ED0218B55C200351BDB /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4ECF218B55C200351BDB /* StringExtension.swift */; };
+		E6FA4ED2218B55E100351BDB /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4ED1218B55E100351BDB /* CollectionExtension.swift */; };
+		E6FA4ED4218B561200351BDB /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4ED3218B561200351BDB /* DictionaryExtension.swift */; };
+		E6FA4ED7218B567400351BDB /* LocationCollectionMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4ED6218B567400351BDB /* LocationCollectionMetadata.swift */; };
+		E6FA4ED9218B5C2C00351BDB /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4ED8218B5C2C00351BDB /* TimeIntervalExtension.swift */; };
+		E6FA4EDB218BC10F00351BDB /* SpeedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4EDA218BC10F00351BDB /* SpeedRange.swift */; };
+		E6FA4EDD218BC25300351BDB /* LocationTrackerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4EDC218BC25300351BDB /* LocationTrackerConstants.swift */; };
+		E6FA4EDF218BC2E600351BDB /* LocationTrackerResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4EDE218BC2E600351BDB /* LocationTrackerResolution.swift */; };
+		E6FA4EE1218C41BC00351BDB /* LocationTrackerDebugHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FA4EE0218C41BC00351BDB /* LocationTrackerDebugHelpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E63BA69421873D2800E8459F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63BA67721873D2600E8459F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E63BA67E21873D2700E8459F;
+			remoteInfo = LocationTrackerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E601C5612189E6FF00E522F4 /* vangelis-jog.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = "vangelis-jog.gpx"; sourceTree = "<group>"; };
+		E63BA67F21873D2700E8459F /* LocationTrackerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTrackerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63BA68221873D2700E8459F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E63BA68421873D2700E8459F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E63BA68721873D2700E8459F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E63BA68921873D2800E8459F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E63BA68C21873D2800E8459F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E63BA68E21873D2800E8459F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E63BA69321873D2800E8459F /* LocationTrackerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTrackerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63BA69721873D2800E8459F /* LocationTrackerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackerDemoTests.swift; sourceTree = "<group>"; };
+		E63BA69921873D2800E8459F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E63BA6BC21875E8000E8459F /* CLLocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
+		E63BA6BF21875F1F00E8459F /* LocationTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTracker.swift; sourceTree = "<group>"; };
+		E647B083218F59D6007C8927 /* ymittos-run.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ymittos-run.gpx"; sourceTree = "<group>"; };
+		E688F3182189A93200707376 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E688F31A2189AD3700707376 /* pendeli-walk.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pendeli-walk.gpx"; sourceTree = "<group>"; };
+		E688F31C2189AF2000707376 /* pendeli-cycle.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pendeli-cycle.gpx"; sourceTree = "<group>"; };
+		E688F31D2189AF2000707376 /* pendeli-jog.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pendeli-jog.gpx"; sourceTree = "<group>"; };
+		E688F31E2189AF2000707376 /* pendeli-drive.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pendeli-drive.gpx"; sourceTree = "<group>"; };
+		E688F31F2189AF2000707376 /* pendeli-run.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pendeli-run.gpx"; sourceTree = "<group>"; };
+		E688F3202189AF2000707376 /* pendeli-sprint.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pendeli-sprint.gpx"; sourceTree = "<group>"; };
+		E6B3A7B021B2B03A002FBB00 /* CustomLocationResolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationResolutionViewController.swift; sourceTree = "<group>"; };
+		E6CAEA1B218D913D0053A09D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		E6CAEA1D218DA0440053A09D /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		E6CAEA1F218DA54B0053A09D /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		E6CAEA21218DE3B60053A09D /* athens-drive.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = "athens-drive.gpx"; sourceTree = "<group>"; };
+		E6E0DC12218CF660004829CB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E6E0DC14218CFC54004829CB /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		E6E0DC16218D0032004829CB /* LocationTrackerPowerSaveOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackerPowerSaveOption.swift; sourceTree = "<group>"; };
+		E6FA4EC7218B029000351BDB /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		E6FA4EC9218B06CD00351BDB /* walking-on-terrace.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "walking-on-terrace.json"; sourceTree = "<group>"; };
+		E6FA4ECD218B393300351BDB /* mavilis-walk.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "mavilis-walk.json"; sourceTree = "<group>"; };
+		E6FA4ECF218B55C200351BDB /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E6FA4ED1218B55E100351BDB /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
+		E6FA4ED3218B561200351BDB /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		E6FA4ED6218B567400351BDB /* LocationCollectionMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionMetadata.swift; sourceTree = "<group>"; };
+		E6FA4ED8218B5C2C00351BDB /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		E6FA4EDA218BC10F00351BDB /* SpeedRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedRange.swift; sourceTree = "<group>"; };
+		E6FA4EDC218BC25300351BDB /* LocationTrackerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackerConstants.swift; sourceTree = "<group>"; };
+		E6FA4EDE218BC2E600351BDB /* LocationTrackerResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackerResolution.swift; sourceTree = "<group>"; };
+		E6FA4EE0218C41BC00351BDB /* LocationTrackerDebugHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackerDebugHelpers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E63BA67C21873D2700E8459F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63BA69021873D2800E8459F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E63BA67621873D2600E8459F = {
+			isa = PBXGroup;
+			children = (
+				E63BA68121873D2700E8459F /* LocationTrackerDemo */,
+				E63BA69621873D2800E8459F /* LocationTrackerDemoTests */,
+				E63BA68021873D2700E8459F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E63BA68021873D2700E8459F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E63BA67F21873D2700E8459F /* LocationTrackerDemo.app */,
+				E63BA69321873D2800E8459F /* LocationTrackerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E63BA68121873D2700E8459F /* LocationTrackerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E63BA68221873D2700E8459F /* AppDelegate.swift */,
+				E63BA68921873D2800E8459F /* Assets.xcassets */,
+				E63BA68E21873D2800E8459F /* Info.plist */,
+				E63BA6BE21875F0700E8459F /* LocationTracker */,
+				E6FA4ED5218B564E00351BDB /* Models */,
+				E6FA4ECB218B153B00351BDB /* User Interface */,
+				E63BA6BB21875E6B00E8459F /* Extensions */,
+				E688F3262189AF2700707376 /* Recources */,
+			);
+			path = LocationTrackerDemo;
+			sourceTree = "<group>";
+		};
+		E63BA69621873D2800E8459F /* LocationTrackerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6FA4ECC218B391C00351BDB /* Debug */,
+				E63BA69721873D2800E8459F /* LocationTrackerDemoTests.swift */,
+				E63BA69921873D2800E8459F /* Info.plist */,
+			);
+			path = LocationTrackerDemoTests;
+			sourceTree = "<group>";
+		};
+		E63BA6BB21875E6B00E8459F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E63BA6BC21875E8000E8459F /* CLLocationExtension.swift */,
+				E6FA4ED1218B55E100351BDB /* CollectionExtension.swift */,
+				E6FA4EC7218B029000351BDB /* DateExtension.swift */,
+				E6FA4ED3218B561200351BDB /* DictionaryExtension.swift */,
+				E6CAEA1F218DA54B0053A09D /* NotificationExtension.swift */,
+				E6FA4ECF218B55C200351BDB /* StringExtension.swift */,
+				E6FA4ED8218B5C2C00351BDB /* TimeIntervalExtension.swift */,
+				E6CAEA1D218DA0440053A09D /* UIApplicationExtension.swift */,
+				E6CAEA1B218D913D0053A09D /* UIColorExtension.swift */,
+				E6E0DC14218CFC54004829CB /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E63BA6BE21875F0700E8459F /* LocationTracker */ = {
+			isa = PBXGroup;
+			children = (
+				E63BA6BF21875F1F00E8459F /* LocationTracker.swift */,
+				E6FA4EDC218BC25300351BDB /* LocationTrackerConstants.swift */,
+				E6FA4EE0218C41BC00351BDB /* LocationTrackerDebugHelpers.swift */,
+				E6FA4EDE218BC2E600351BDB /* LocationTrackerResolution.swift */,
+				E6E0DC16218D0032004829CB /* LocationTrackerPowerSaveOption.swift */,
+			);
+			path = LocationTracker;
+			sourceTree = "<group>";
+		};
+		E688F3262189AF2700707376 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				E688F3272189AF3100707376 /* GPX */,
+			);
+			path = Recources;
+			sourceTree = "<group>";
+		};
+		E688F3272189AF3100707376 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAEA21218DE3B60053A09D /* athens-drive.gpx */,
+				E688F31C2189AF2000707376 /* pendeli-cycle.gpx */,
+				E688F31E2189AF2000707376 /* pendeli-drive.gpx */,
+				E688F31D2189AF2000707376 /* pendeli-jog.gpx */,
+				E688F31F2189AF2000707376 /* pendeli-run.gpx */,
+				E688F3202189AF2000707376 /* pendeli-sprint.gpx */,
+				E688F31A2189AD3700707376 /* pendeli-walk.gpx */,
+				E601C5612189E6FF00E522F4 /* vangelis-jog.gpx */,
+				E647B083218F59D6007C8927 /* ymittos-run.gpx */,
+			);
+			path = GPX;
+			sourceTree = "<group>";
+		};
+		E6FA4ECB218B153B00351BDB /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E63BA68B21873D2800E8459F /* LaunchScreen.storyboard */,
+				E63BA68621873D2700E8459F /* Main.storyboard */,
+				E688F3182189A93200707376 /* MapViewController.swift */,
+				E63BA68421873D2700E8459F /* ViewController.swift */,
+				E6E0DC12218CF660004829CB /* MenuViewController.swift */,
+				E6B3A7B021B2B03A002FBB00 /* CustomLocationResolutionViewController.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E6FA4ECC218B391C00351BDB /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				E6FA4EC9218B06CD00351BDB /* walking-on-terrace.json */,
+				E6FA4ECD218B393300351BDB /* mavilis-walk.json */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		E6FA4ED5218B564E00351BDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6FA4ED6218B567400351BDB /* LocationCollectionMetadata.swift */,
+				E6FA4EDA218BC10F00351BDB /* SpeedRange.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E63BA67E21873D2700E8459F /* LocationTrackerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E63BA69C21873D2800E8459F /* Build configuration list for PBXNativeTarget "LocationTrackerDemo" */;
+			buildPhases = (
+				E63BA67B21873D2700E8459F /* Sources */,
+				E63BA67C21873D2700E8459F /* Frameworks */,
+				E63BA67D21873D2700E8459F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationTrackerDemo;
+			productName = LocationTrackerDemo;
+			productReference = E63BA67F21873D2700E8459F /* LocationTrackerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E63BA69221873D2800E8459F /* LocationTrackerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E63BA69F21873D2800E8459F /* Build configuration list for PBXNativeTarget "LocationTrackerDemoTests" */;
+			buildPhases = (
+				E63BA68F21873D2800E8459F /* Sources */,
+				E63BA69021873D2800E8459F /* Frameworks */,
+				E63BA69121873D2800E8459F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E63BA69521873D2800E8459F /* PBXTargetDependency */,
+			);
+			name = LocationTrackerDemoTests;
+			productName = LocationTrackerDemoTests;
+			productReference = E63BA69321873D2800E8459F /* LocationTrackerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E63BA67721873D2600E8459F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Evangelos Pittas";
+				TargetAttributes = {
+					E63BA67E21873D2700E8459F = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					E63BA69221873D2800E8459F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E63BA67E21873D2700E8459F;
+					};
+				};
+			};
+			buildConfigurationList = E63BA67A21873D2600E8459F /* Build configuration list for PBXProject "LocationTrackerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E63BA67621873D2600E8459F;
+			productRefGroup = E63BA68021873D2700E8459F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E63BA67E21873D2700E8459F /* LocationTrackerDemo */,
+				E63BA69221873D2800E8459F /* LocationTrackerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E63BA67D21873D2700E8459F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E688F3222189AF2100707376 /* pendeli-jog.gpx in Resources */,
+				E601C5622189E6FF00E522F4 /* vangelis-jog.gpx in Resources */,
+				E6FA4ECA218B06CD00351BDB /* walking-on-terrace.json in Resources */,
+				E688F3232189AF2100707376 /* pendeli-drive.gpx in Resources */,
+				E63BA68D21873D2800E8459F /* LaunchScreen.storyboard in Resources */,
+				E63BA68A21873D2800E8459F /* Assets.xcassets in Resources */,
+				E688F3212189AF2100707376 /* pendeli-cycle.gpx in Resources */,
+				E6CAEA22218DE3B60053A09D /* athens-drive.gpx in Resources */,
+				E688F31B2189AD3700707376 /* pendeli-walk.gpx in Resources */,
+				E688F3252189AF2100707376 /* pendeli-sprint.gpx in Resources */,
+				E647B084218F59D6007C8927 /* ymittos-run.gpx in Resources */,
+				E63BA68821873D2700E8459F /* Main.storyboard in Resources */,
+				E688F3242189AF2100707376 /* pendeli-run.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63BA69121873D2800E8459F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FA4ECE218B393300351BDB /* mavilis-walk.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E63BA67B21873D2700E8459F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FA4ED4218B561200351BDB /* DictionaryExtension.swift in Sources */,
+				E6FA4EDD218BC25300351BDB /* LocationTrackerConstants.swift in Sources */,
+				E6CAEA1E218DA0440053A09D /* UIApplicationExtension.swift in Sources */,
+				E63BA68521873D2700E8459F /* ViewController.swift in Sources */,
+				E6FA4EDF218BC2E600351BDB /* LocationTrackerResolution.swift in Sources */,
+				E6CAEA1C218D913D0053A09D /* UIColorExtension.swift in Sources */,
+				E6FA4ED0218B55C200351BDB /* StringExtension.swift in Sources */,
+				E6FA4EC8218B029000351BDB /* DateExtension.swift in Sources */,
+				E63BA6C021875F1F00E8459F /* LocationTracker.swift in Sources */,
+				E6E0DC13218CF660004829CB /* MenuViewController.swift in Sources */,
+				E6B3A7B121B2B03A002FBB00 /* CustomLocationResolutionViewController.swift in Sources */,
+				E6E0DC15218CFC54004829CB /* UIViewExtension.swift in Sources */,
+				E6FA4EDB218BC10F00351BDB /* SpeedRange.swift in Sources */,
+				E6CAEA20218DA54B0053A09D /* NotificationExtension.swift in Sources */,
+				E63BA6BD21875E8000E8459F /* CLLocationExtension.swift in Sources */,
+				E6FA4ED2218B55E100351BDB /* CollectionExtension.swift in Sources */,
+				E6FA4EE1218C41BC00351BDB /* LocationTrackerDebugHelpers.swift in Sources */,
+				E688F3192189A93200707376 /* MapViewController.swift in Sources */,
+				E6FA4ED7218B567400351BDB /* LocationCollectionMetadata.swift in Sources */,
+				E63BA68321873D2700E8459F /* AppDelegate.swift in Sources */,
+				E6FA4ED9218B5C2C00351BDB /* TimeIntervalExtension.swift in Sources */,
+				E6E0DC17218D0032004829CB /* LocationTrackerPowerSaveOption.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63BA68F21873D2800E8459F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63BA69821873D2800E8459F /* LocationTrackerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E63BA69521873D2800E8459F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E63BA67E21873D2700E8459F /* LocationTrackerDemo */;
+			targetProxy = E63BA69421873D2800E8459F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E63BA68621873D2700E8459F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E63BA68721873D2700E8459F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E63BA68B21873D2800E8459F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E63BA68C21873D2800E8459F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E63BA69A21873D2800E8459F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E63BA69B21873D2800E8459F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E63BA69D21873D2800E8459F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LocationTrackerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EP.LocationTrackerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E63BA69E21873D2800E8459F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LocationTrackerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EP.LocationTrackerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E63BA6A021873D2800E8459F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9N9A9WFLP;
+				INFOPLIST_FILE = LocationTrackerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EP.LocationTrackerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationTrackerDemo.app/LocationTrackerDemo";
+			};
+			name = Debug;
+		};
+		E63BA6A121873D2800E8459F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9N9A9WFLP;
+				INFOPLIST_FILE = LocationTrackerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EP.LocationTrackerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationTrackerDemo.app/LocationTrackerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E63BA67A21873D2600E8459F /* Build configuration list for PBXProject "LocationTrackerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63BA69A21873D2800E8459F /* Debug */,
+				E63BA69B21873D2800E8459F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E63BA69C21873D2800E8459F /* Build configuration list for PBXNativeTarget "LocationTrackerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63BA69D21873D2800E8459F /* Debug */,
+				E63BA69E21873D2800E8459F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E63BA69F21873D2800E8459F /* Build configuration list for PBXNativeTarget "LocationTrackerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63BA6A021873D2800E8459F /* Debug */,
+				E63BA6A121873D2800E8459F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E63BA67721873D2600E8459F /* Project object */;
+}
